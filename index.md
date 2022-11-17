@@ -4,7 +4,19 @@ This page contains notes of past editions of *The Missing Semester* event at the
 
 This [repository](https://github.com/saeub/missing-semester/) is currently maintained by [bernai](https://github.com/bernai/), [dominikmartinez](https://github.com/dominikmartinez/), [saeub](https://github.com/saeub/), and [vera-bernhard](https://github.com/vera-bernhard/).
 
-## 04.11.2021: *Show How You Code*
+## 2022/11/14: *Show How You Code (2nd ed.)*
+
+### VS Code (Vera, Andreas)
+
+- [VS Code](https://code.visualstudio.com/)
+- Extensions: Python, LaTeX Workshop
+
+## 2022/03/30: *Hidden Gems of Python*
+
+- [atexit](https://docs.python.org/3/library/atexit.html)
+- [dataclasses](https://docs.python.org/3/library/dataclasses.html)
+
+## 2021/11/04: *Show How You Code*
 
 ### zsh (Berna)
 
