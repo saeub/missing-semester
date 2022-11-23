@@ -7,9 +7,19 @@ This [repository](https://github.com/saeub/missing-semester/) is currently maint
 ## 2022/11/14: *Show How You Code (2nd ed.)*
 
 ### VS Code (Vera, Andreas)
-
+- Why VSCode: Multilinguality: one tool for (nearly) everything via extension -> just install extension to support any programming lanugage or framework
 - [VS Code](https://code.visualstudio.com/)
 - Extensions: Python, LaTeX Workshop
+- Some usefule shortcuts:
+    - Find any command/setting in VSCode: Ctrl+Shift+P -> opens the Command Palette
+    - Find any file: Ctrl+P -> opens Quick Open
+    - Open integrated terminal: Ctrl+`
+- For Windows Users: [WSL + VSCode](https://code.visualstudio.com/docs/remote/wsl)
+- [Integrated Git GUI](https://code.visualstudio.com/docs/sourcecontrol/overview)
+- How to get help:
+    - VSCode Navigation: [Peek Defition](https://code.visualstudio.com/docs/editor/editingevolved#_peek), [Go to Definition](https://code.visualstudio.com/docs/editor/editingevolved#_go-to-definition), hover over function name
+    - [VSCode debugger](https://code.visualstudio.com/docs/editor/debugging)
+    - in Terminal: `<some_command> --help` or `man <some_command>`
 
 ## 2022/03/30: *Hidden Gems of Python*
 
