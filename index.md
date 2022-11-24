@@ -21,6 +21,22 @@ This [repository](https://github.com/saeub/missing-semester/) is currently maint
     - [VSCode debugger](https://code.visualstudio.com/docs/editor/debugging)
     - in Terminal: `<some_command> --help` or `man <some_command>`
 
+### Dirty but lightweight alternatives to IDEs (Dominik)
+If you don't depend on IntelliSense and other cool IDE features, there are some interesting alternative tools:
+- For Windows users, if you want to work in a UNIX environment (but don't want to rely on virtual machines or dual-boot options): [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install). You can even run multiple Linux distributions!
+    - WSL uses its own Linux file system. However, both file systems can be accessed from both environments:
+        - `/mnt/c/` in WSL points to Windows' `C:\`.
+        - `\\wsl$\<distribution>` in Windows points to the system root directory of the specified Linux distribution.
+    - Pro tip: You can create shortcuts to access the file systems:
+        - If you use the GUI file explorer on Windows, just create a shortcut to the directory mentioned above.
+        - In WSL, use `ln -s <target> <symlink name>` to create a so-called symbolic link (which acts like a shortcut) to a directory.
+    - If you want to work with multiple terminals, use [byobu](https://www.byobu.org/). With this tool, you can open and manage multiple terminals within one single WSL window.
+- If you use WSL or any other UNIX environment, there are some tools that help you make your life easier:
+    - [nano](https://en.wikipedia.org/wiki/GNU_nano) is a handy text editor if you need to edit a file in your terminal.
+    - For Windows users: To work more comfortably, you can use [Notepad++](https://notepad-plus-plus.org/) on Windows and execute your scripts in WSL. Notepad++ offers syntax highlighting for multiple languages! Of course, there are alternative notepad editors if you work on other operating systems.
+    - If you want to shorten commands you frequently use, you can do so by using aliases. It's as easy as defining them using `alias [alias_name]="[command]"`, but you find more details (e.g., on how to create persistent aliases) in [this tutorial](https://www.shell-tips.com/bash/alias/#gsc.tab=0).
+- What if you don't work on a Python project, but on a web development project that involves HTML, CSS and JavaScript? One simple option is to work on the text files using your preferred text editor, and run the website using Python's [http.server module](https://docs.python.org/3/library/http.server.html). After running`python -m http.server 1111` (e.g., in your WSL terminal), the directory's content will be hosted on `http://localhost:1111`, so you can display it in your web browser on Windows.
+
 ## 2022/03/30: *Hidden Gems of Python*
 
 - [atexit](https://docs.python.org/3/library/atexit.html)
